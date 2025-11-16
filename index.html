@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home - Bento Bliss</title>
+
+  <!-- CSS -->
+  <link href="css/main.css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Go Up!</button>
+
+  <header>
+    <div class="header-box">
+      <a class="logo-link" href="index.html">
+        <img class="logo" src="assets/img/logo.svg" alt="logo">
+      </a>
+
+      <nav class="main-nav">
+        <a class="nav-text" id="shop" href="#home-banner">Home</a>
+        <a class="nav-text" id="about" href="#context">Context </a>
+        <a class="nav-text" id="contact" href="#vis-one">Vis #1</a>
+        <a class="nav-text" id="contact" href="#vis-two">Vis #2</a>
+
+
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div id="burger-menu">
+        <button class="burger-button"> ☰ </button>
+        <div class="mobile-nav-links">
+          <button class="close-button">&times;</button>
+          <a href="#home-banner">Home</a>
+          <a href="#context">Context</a>
+          <a href="#vis-one">Vis #1</a>
+          <a href="#vis-two">Vis #2</a>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="home-banner">
+    <div class="banner-box">
+      <div class="home-headings">
+        <h1>Flights from Vancouver to Toronto: What's the Pattern?</h1>
+      </div>
+    </div>
+
+    <div class="home-img"><img class="shop" src="assets/img/cloud.png" alt="cloud sketch">
+    </div>
+
+  </section>
+
+  <section id="main">
+    <section id="context">
+      <div class="about-box">
+        <h2>Home in Vancouver, Study in Toronto</h2>
+        <p>According to Statistics Canada, 1.3% to 1.93% of bachelor’s degree
+          graduates of post-secondary institutions in Ontario are from British
+          Columbia. This population partially represent post-secondary students
+          whose home is in Vancouver, but study in Toronto. </p>
+        <div id="context-vis">
+          <p>Please wait for the visualization!</p>
+        </div>
+      </div>
+    </section>
+
+
+  </section>
+
+  <section id="vis-one">
+    <div class="event-box">
+      <div class="event-info">
+        <h2>What seems to be the cheapest/most expensive time of the year in months?</h2>
+
+        <h3>Let's compare between the cheapeset and most expensive time of the year.</h3>
+        <p>This is a line graph, comparing how the prices fluctuate between
+          cheapest and most expensive prices. We have first manually collected the
+          most expensive and cheapest one-way Vancouver-Toronto ticket prices for
+          adult, economy class in 2026. We searched Google Flights and Skyscanner.
+          We put them on <a class="text-link"
+            href="https://docs.google.com/spreadsheets/d/1k5I8TawR2dMTCZnXBWkVrDVX8f1-T7YhnMOwioVIb7s/edit?usp=sharing">Google
+            Spreadsheet</a>,
+          where you can find our dataset.</p>
+          <img src="assets/img/1-line-graph-months.png" class="line-graph" alt="line graph for months data">
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="vis-two">
+    <div class="event-box">
+      <div class="event-info">
+        <h2>Now let's see the data in weeks.</h2>
+        <h3>This is a bar graph.
+        </h3>
+        <p>
+          We first filtered the dataset by the week of the month. Then, we took the average of each week.
+        </p>
+        <p>
+          <strong>Please note! </strong>This is just a sample bar graph.
+        </p>
+        <img src="assets/img/2-bar-graph-weeks-cheapest.png" class="bar-graph" alt="3rd visualization, bar graph">
+        <img src="assets/img/2-bar-graph-weeks-expensive.png" class="bar-graph" alt="3rd visualization, bar graph">
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="vis-one">
+    <div class="event-box">
+      <div class="event-info">
+        <h2>Now let's see the data in a day of the week. </h2>
+
+        <h3>This is a calendar heatmap.</h3>
+        <p> To identify the statistically cheapest day of the week, we created a
+          calendar heatmap visualization to highlight the day with the lowest
+          ticket price for each individual week. The lower the price, the lighter
+          the colour of each day would be. From the calendar heatmap, we have
+          tallied the frequency of each day of the week (Monday, Tuesday, etc.)
+          being the designated cheapest day across a chosen period (e.g., a month
+          or quarter). This frequency count allows us to conclude which day of the
+          week statistically offers the lowest ticket prices.</p>
+        <p><strong>Please note! </strong>This is just a sample heatmap from Rising Stack blog.</p>
+        <p class="source"><strong>Source:</strong>
+            RisingStack Engineering. (2024, May 30). Tutorial: Building a D3.js Calendar
+            Heatmap (to visualize StackOverflow Usage Data). RisingStack
+            Engineering.
+            https://blog.risingstack.com/tutorial-d3-js-calendar-heatmap/</p>
+          <img src="assets\img\4-calendar-heatmap-days.png" class="calendar-heatmap"
+          alt="4th visualization, calendar heatmap">
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <footer>
+    <div class="footer-box">
+
+      <div class="contact">
+        <div class="footer-container-logo">
+          <img class="logo-footer" src="assets/img/logo.svg" alt="logo" width="30px" height="30px">
+          <h3>Contact Us</h3>
+        </div>
+        <p><strong>Have questions?</strong></p>
+        <p><a class="text-link" href="mailto:jaeeunk@sfu.ca">jaeeunk@sfu.ca</a></p>
+      </div>
+
+      <div class="links">
+        <div class="footer-container-logo">
+          <img class="logo-footer" src="assets/img/logo.svg" alt="logo" width="30px" height="30px">
+          <h3>Links</h3>
+        </div>
+
+        <p>
+          <a class="text-link" href="https://github.com/">Git Repository</a>
+        </p>
+      </div>
+    </div>
+
+
+  </footer>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
