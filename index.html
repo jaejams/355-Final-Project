@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Home - Bento Bliss</title>
+  <title>Home - IAT 355 Final Project</title>
 
   <!-- CSS -->
   <link href="css/main.css" rel="stylesheet">
@@ -73,6 +73,16 @@
           graduates of post-secondary institutions in Ontario are from British
           Columbia. This population partially represent post-secondary students
           whose home is in Vancouver, but study in Toronto. </p>
+        
+          <p class="source">
+            To select multiple, use Ctrl + click (Windows/Linux) or Cmd + click (Mac). <br>
+            To select all, click inside the list, then use Ctrl + A (or Cmd + A).
+          </p>
+          <div class="province-selector-container">
+          <label for="provinceSelect">Select Regions</label><br>
+          <select id="provinceSelect" multiple size="10" style="min-width: 200px;"></select>
+        </div>
+
         <div id="context-vis">
           <p>Please wait for the visualization!</p>
         </div>
@@ -96,7 +106,7 @@
             href="https://docs.google.com/spreadsheets/d/1k5I8TawR2dMTCZnXBWkVrDVX8f1-T7YhnMOwioVIb7s/edit?usp=sharing">Google
             Spreadsheet</a>,
           where you can find our dataset.</p>
-          <img src="assets/img/1-line-graph-months.png" class="line-graph" alt="line graph for months data">
+        <img src="assets/img/1-line-graph-months.png" class="line-graph" alt="line graph for months data">
       </div>
 
     </div>
@@ -139,11 +149,11 @@
           week statistically offers the lowest ticket prices.</p>
         <p><strong>Please note! </strong>This is just a sample heatmap from Rising Stack blog.</p>
         <p class="source"><strong>Source:</strong>
-            RisingStack Engineering. (2024, May 30). Tutorial: Building a D3.js Calendar
-            Heatmap (to visualize StackOverflow Usage Data). RisingStack
-            Engineering.
-            https://blog.risingstack.com/tutorial-d3-js-calendar-heatmap/</p>
-          <img src="assets\img\4-calendar-heatmap-days.png" class="calendar-heatmap"
+          RisingStack Engineering. (2024, May 30). Tutorial: Building a D3.js Calendar
+          Heatmap (to visualize StackOverflow Usage Data). RisingStack
+          Engineering.
+          https://blog.risingstack.com/tutorial-d3-js-calendar-heatmap/</p>
+        <img src="assets\img\4-calendar-heatmap-days.png" class="calendar-heatmap"
           alt="4th visualization, calendar heatmap">
       </div>
 
@@ -181,6 +191,8 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="js/context.js"></script>
 
 </body>
 
